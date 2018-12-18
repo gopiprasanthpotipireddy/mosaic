@@ -1,0 +1,508 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="./js/wow.min.js"></script>
+	<link rel="stylesheet" href="./css/animate.css">
+		<link rel="stylesheet" href="./css/animate.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Pacifico" rel="stylesheet">
+<link rel="stylesheet" href="./fonts/sample.ttf">
+<title>ARTICLES | MOSAIC</title>
+<link rel="shortcut icon" type="image/png" href="./images/favicon.png">
+<link rel="stylesheet" type="text/css" href="mosaic.css">
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("#upb1").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<style>
+	#ab{
+ 	 position: relative;
+ 	 right: -220px;
+	 background-color:white;
+ 	border:none;
+ 	color:#f15654;
+ 	font-size: 14px;
+	vertical-align: middle;
+	line-height: 45px;
+	height: 60px;
+}
+ 	.modal-title{
+		text-decoration:underline;
+		position:relative;
+		}
+#s{
+	position:relative;
+	left:30px;
+}
+	#cs,#ec{position:relative;
+	left:-190px;}
+#ee,#me{position:relative;
+	left:-185px;}
+#r{position:relative;
+	left:-90px;}
+#q{color:white;position:relative;top:15px;}
+.glyphicon.glyphicon-comment{font-size:20px;}
+.modal-backdrop{
+	bottom:0;}
+	.image_up {
+	    -webkit-transform: rotate(270deg);
+	    -moz-transform: rotate(270deg);
+	    -ms-transform: rotate(270deg);
+	    -o-transform: rotate(270deg);
+	    transform: rotate(270deg);
+		margin-left:30px;
+	}
+
+
+
+@media only screen and (max-width:819px) {
+.navbar-collapse{
+  background-color:#ffffff;
+	transition:left 0.3s ease-in;
+	transition:left 0.3s ease-out;
+	position: absolute;
+	top:0;
+	left:-6px;
+	height: auto;
+}
+#bb,#eb,#tb,#fb,#arb{
+ background-color:#ffffff;
+ text-decoration: none;
+ border:none;
+ color:#f15654;
+ font-size: 14px;
+ padding-left:15px;
+}
+#ab{
+	background-color:#ffffff;
+  text-decoration: none;
+  border:none;
+  color:#ed3b38;
+	font-weight: bold;
+  font-size: 14px;
+  padding-left:15px;
+}
+#bb:hover,#eb:hover,#tb:hover,#fb:hover,#arb:hover{
+	color:#ed3b38;
+	font-weight: bold;
+}
+.navbar-collapse.collapsing {
+			 height: auto;
+			 -webkit-transition: left 0.3s ease;
+			 -o-transition: left 0.3s ease;
+			 -moz-transition: left 0.3s ease;
+			 transition: left 0.3s ease;
+			 left:-100%;
+			  z-index: 10;
+	 }
+	 .navbar-collapse.show {
+			 left:-6px;
+			 -webkit-transition: left 0.3s ease-in;
+			 -o-transition: left 0.3s ease-in;
+			 -moz-transition: left 0.3s ease-in;
+			 transition: left 0.3s ease-in;
+			  z-index: 10;
+	 }
+
+}
+@media only screen and (max-width: 820px) {
+    /* For mobile phones: */
+#ab,#bb,#arb,#eb,#tb,#fb,#sb{
+	position:relative;
+	right:10px;
+}
+    }
+		@media only screen and (min-width: 821px) and (max-width:1100px) {
+		    /* For mobile phones: */
+		#ab{
+			position:relative;
+			right:-20px;
+		}
+		#arb{
+			position: relative;
+			right:-30px
+		}
+		#tb{
+			position: relative;
+			right:-40px
+		}
+		#bb{
+			position: relative;
+			right:-50px
+		}
+		#eb{
+			position: relative;
+			right:-60px
+		}
+		#fb{
+			position: relative;
+			right:-70px
+		}
+	#sb{
+		position: relative;
+		right:-80px
+	}
+		    }
+				.flex-container{
+					display:flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items:center;
+				}
+				#collapsibleNavbar{
+					position: relative;
+					top:0px;
+				}
+				.footer{
+					position: fixed;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					width: 100%;
+				}
+</style>
+</head>
+<body style="background-image:url('./images/arts/bg2.jpeg');background-repeat:no-repeat;	background-size: cover;">
+	<nav  class="navbar sticky-top navbar-expand-md navbar-dark " style="background-color:#f15654;height:60px;">
+		<a id="mb" class="nav-item nav-link active" href="./index.html">
+		Mosaic
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"style="position:relative;top:-15px;"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<div class="navbar-nav mr-auto">
+					<a id="ab" class="nav-item nav-link active" href="./articles.html">
+					ARTICLES
+				</a>
+					<a id="arb" class="nav-item nav-link active" href="./arts.html">
+					ART CORNER
+				</a>
+					<a id="tb" class="nav-item nav-link active" href="./bytes.html">
+					BYTES
+				</a>
+					<a id="bb" class="nav-item nav-link active" href="./blogs.html">
+				 BLOGS
+				</a>
+					<a id="eb" class="nav-item nav-link active" href="./events.html">
+					EVENTS
+				</a>
+					<a id="fb" class="nav-item nav-link active" href="./mvgrforums">
+					FORUM
+				</a>
+				<form id="sb" class="form-inline" action="#">
+					<input type="text" placeholder="&#xf002;Search" style="text-align:center;font-family:FontAwesome;width:180px;color:#f15654;"></input>
+				</form>
+			</div>
+		</div>
+
+	</nav>
+
+<br>
+<div id="heading" class="container-fluid">
+	<div class="row">
+		<div class="col-2">
+		</div>
+	<div class="col-8"style="background-color:#f15654">
+		<div class="container">
+		<div id="carouselContent" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active text-center p-4">
+					<h5 style="color:#ffffff;"><i class="fa fa-quote-left"></i>Writing is an exploration. We start from nothing and learn as we go!<i class="fa fa-quote-right"></i></h5>
+					</div>
+					<div class="carousel-item text-center p-4">
+
+							<h5 style="color:#ffffff"><i class="fa fa-quote-left"></i>Let us share our knowledge with others, Let's write!<i class="fa fa-quote-right"></i></h5>
+					</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+					<span  class="carousel-control-prev-icon" aria-hidden="true" style="caret-color:#000000"></span>
+					<span style="color:#f15654" class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"style="caret-color:#000000"></span>
+					<span class="sr-only">Next</span>
+			</a>
+		</div>
+		</div>
+	</div>
+	<div class="col-2">
+	</div>
+</div>
+</div>
+<br>
+	<div class="container-fluid">
+	    <div class="row">
+    <div class="col-xl-8 col-lg-8 col-md-8">
+			<div class="flex-container">
+			<div class="wow bounceInUp" class="card">
+				<div class="card-body"style="background-color:#e5e5e5;border-radius:50px;">
+					<div class="row">
+						<div class="col-3">
+							<img src="./images/articles/article1.jpg" height="110">
+						</div>
+    <h5 class="card-title" style="font-size:24px">A "GPS for inside your body"<!-- -Name<i class="fa fa-university">Dept</i> (year)&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-calendar">Date</i>--></h5>
+    <p class="card-text">CSAIL wireless system suggests future where doctors could implant sensors to track tumors or even dispense drugs.Investigating inside the human body often requires cutting open a patient or swallowing long tubes with built-in cameras. But what if physicians could get a better glimpse in a less expensive and time-consuming manner?</p>
+<span data-toggle="modal" data-target="#myModal"><a href="#myModal"><button id="a1b">Read Article</button></a></span>
+		<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+					<h3 style="text-align:center;">A "GPS for inside your body"</h3>
+          <a href="#"data-dismiss="modal"><i style="color:#A52A2A;font-size:24px;position:relative;left:35px;"class="fa fa-close"></i></a>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+					<div class="row">
+						<div class="col">
+							<img src="article1.jpg"/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<h4>CSAIL wireless system suggests future where doctors could implant sensors to track tumors or even dispense drugs.</h4>
+							<p>Investigating inside the human body often requires cutting open a patient or swallowing long tubes with built-in cameras.But what if physicians could get a better glimpse in a less expensive, invasive, and time-consuming manner?<br>
+
+A team from MIT’s Computer Science and Artificial Intelligence Laboratory (CSAIL) led by Professor Dina Katabi is working on doing exactly that with an “in-body GPS" system dubbed ReMix. The new method can pinpoint the location of ingestible implants inside the body using low-power wireless signals. These implants could be used as tiny tracking devices on shifting tumors to help monitor their slight movements.<br>
+
+In animal tests, the team demonstrated that they can track the implants with centimeter-level accuracy. The team says that, one day, similar implants could be used to deliver drugs to specific regions in the body.<br>
+
+ReMix was developed in collaboration with researchers from Massachusetts General Hospital (MGH). The team describes the system in a paper that's being presented at this week's Association for Computing Machinery's Special Interest Group on Data Communications (SIGCOMM) conference in Budapest, Hungary.</p>
+
+<h4>Tracking inside the body</h4>
+
+<p>To test ReMix, Katabi’s group first implanted a small marker in animal tissues. To track its movement, the researchers used a wireless device that reflects radio signals off the patient. This was based on a wireless technology that the researchers previously demonstrated to detect heart rate, breathing, and movement. A special algorithm then uses that signal to pinpoint the exact location of the marker.<br>
+
+Interestingly, the marker inside the body does not need to transmit any wireless signal. It simply reflects the signal transmitted by the wireless device outside the body. Therefore, it doesn't need a battery or any other external source of energy.<br>
+
+A key challenge in using wireless signals in this way is the many competing reflections that bounce off a person's body. In fact, the signals that reflect off a person’s skin are actually 100 million times more powerful than the signals of the metal marker itself.<br>
+
+To overcome this, the team designed an approach that essentially separates the interfering skin signals from the ones they're trying to measure. They did this using a small semiconductor device, called a “diode,” that mixes signals together so the team can then filter out the skin-related signals. For example, if the skin reflects at frequencies of F1 and F2, the diode creates new combinations of those frequencies, such as F1-F2 and F1+F2. When all of the signals reflect back to the system, the system only picks up the combined frequencies, filtering out the original frequencies that came from the patient’s skin.<br>
+
+One potential application for ReMix is in proton therapy, a type of cancer treatment that involves bombarding tumors with beams of magnet-controlled protons. The approach allows doctors to prescribe higher doses of radiation, but requires a very high degree of precision, which means that it’s usually limited to only certain cancers.<br>
+
+Its success hinges on something that's actually quite unreliable: a tumor staying exactly where it is during the radiation process. If a tumor moves, then healthy areas could be exposed to the radiation. But with a small marker like ReMix’s, doctors could better determine the location of a tumor in real-time and either pause the treatment or steer the beam into the right position. (To be clear, ReMix is not yet accurate enough to be used in clinical settings. Katabi says a margin of error closer to a couple of millimeters would be necessary for actual implementation.)<br>
+
+"The ability to continuously sense inside the human body has largely been a distant dream," says Romit Roy Choudhury, a professor of electrical engineering and computer science at the University of Illinois, who was not involved in the research. "One of the roadblocks has been wireless communication to a device and its continuous localization. ReMix makes a leap in this direction by showing that the wireless component of implantable devices may no longer be the bottleneck."</p>
+
+<h4>Looking ahead</h4>
+
+<p>There are still many ongoing challenges for improving ReMix. The team next hopes to combine the wireless data with medical data, such as that from magnetic resonance imaging (MRI) scans, to further improve the system’s accuracy. In addition, the team will continue to reassess the algorithm and the various tradeoffs needed to account for the complexity of different bodies.<br>
+
+"We want a model that's technically feasible, while still complex enough to accurately represent the human body," says MIT PhD student Deepak Vasisht, lead author on the new paper. "If we want to use this technology on actual cancer patients one day, it will have to come from better modeling a person's physical structure."<br>
+
+The researchers say that such systems could help enable more widespread adoption of proton therapy centers. Today, there are only about 100 centers globally.<br>
+
+"One reason that [proton therapy] is so expensive is because of the cost of installing the hardware," Vasisht says. "If these systems can encourage more applications of the technology, there will be more demand, which will mean more therapy centers, and lower prices for patients."<br>
+
+Katabi and Vasisht co-wrote the paper with MIT PhD student Guo Zhang, University of Waterloo professor Omid Abari, MGH physicist Hsaio-Ming Lu, and MGH technical director Jacob Flanz.<br>
+</p>
+						</div>
+					</div>
+      </div>
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+		</div>
+		<div class="container">
+			<br><br>
+		</div>
+				<div class="wow bounceInUp" class="card">
+					<div class="card-body" style="background-color:#e5e5e5;border-radius:50px;">
+							<div class="row">
+								<div class="col-3">
+						<img src="./images/articles/article2.jpeg" height="100">
+					</div>
+	    <h4 class="card-title">Difference Between CSE and IT</h4>
+	    <p class="card-text">What is the difference between Computer Science(CS) and Information Technology (IT)? This is a question that most people who want to pursue a career in the tech industry ask. To make the matter more complex, there is an extra subject that should be added to this equation. That is Computer Engineering.</p>
+			<span data-toggle="modal" data-target="#myModal2"><a href="#myModal2"><button id="a2b">Read Article</button></a></span>
+					<div class="modal" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+							<h3>Difference Between Computer Science and Information Technology</h3>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <div class="container-fluid">
+								<div class="row">
+									<div class="col">
+										<img src="./images/articles/article2.jpeg" width="500px"/>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">
+										<h4>What is the difference between Computer Science(CS) and Information Technology (IT)? This is a question that most people who want to pursue a career in the tech industry ask. To make the matter more complex, there is an extra subject that should be added to this equation. That is Computer Engineering.</h4>
+										<p>From the surface, the three subjects seem to mean the same thing. All of them are about computer and technology. However, from a deeper perspective, the three are very different. But what is the difference? In this article, we are going to look at the differences between Computer Science, Computer Engineering and Information Technology. We will also look at the possible careers from each subject.</p>
+										<h4>Computer Science</h4>
+										<p>Computer science incorporates all the key aspects of science. It provides answers s to why computer programs are behaving in a certain manner. It goes deeper to give an explanation of the theories of different applications. Computer Science also uses advanced calculus to come up with algorithms which can be used to solve various computational problems.</p>
+										<p>As a computer scientist, you will be responsible for coming up with new ways that can be used to manipulate and manage data. You will have a better understanding of how the operating system and software work.</p>
+										<p>Computer science will help you make sense out of every line of code. You will also learn the key principles of different programming languages, discrete mathematics and software development. The subject will give you a clear understanding of how different process in a computer work. In overall, computer science gives you the ability to talk to a computer.
+</p>
+										<p></p>
+
+
+									</div>
+								</div>
+						</div>
+					</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary">Save changes</button>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+				</div>
+	  </div>
+	</div>
+			</div>
+			<div class="container">
+				<br><br>
+			</div>
+					<div class="wow bounceInUp" class="card">
+						<div class="card-body" style="background-color:#e5e5e5;border-radius:50px;">
+							<div class="row">
+								<div class="col-3">
+							<img src="./images/articles/article3.jpg" height="100">
+						</div>
+				<h4 class="card-title">These Robots Kill Antibiotic-Resistant Bacteria </h4>
+				<p class="card-text">Blood does a miraculous job of keeping us alive, vigilantly attacking bacteria and toxins around the clock. But with antibiotic-resistant bacteria on the rise, robots are being called to the rescue.</p>
+				<a href=""#""><button id="a3b">Read Article</button></a>
+			</div>
+			</div>
+				</div>
+				<div class="container">
+					<br><br>
+				</div>
+						<div class="wow bounceInUp" class="card">
+							<div class="card-body" style="background-color:#e5e5e5;border-radius:50px;">
+								<div class="row">
+									<div class="col-3">
+								<img src="./images/articles/article4.jpg" height="100">
+							</div>
+			    <h4 class="card-title">Mind-controlled toys for Christmas Presents</h4>
+			    <p class="card-text">The next generation of toys could be controlled by the power of the mind,Led by Professor Christopher James, Director of Warwick Engineering, technology has been developed which allows electronic devices to be activated using electrical impulses from brain waves, by connecting our thoughts to computerised systems.</p>
+			    <button id="a4b">Read Article</button>
+			  </div>
+			</div>
+					</div>
+					<div class="container">
+						<br><br>
+					</div>
+							<div class="wow bounceInUp" class="card">
+								<div class="card-body" style="background-color:#e5e5e5;border-radius:50px;">
+									<div class="row">
+										<div class="col-3">
+									<img src="./images/articles/article5.jpg" height="100">
+								</div>
+				    <h4 class="card-title">“Artificial blubber” protects divers in frigid water</h4>
+				    <p class="card-text">MIT engineers develop a way to triple the survival time for swimmers in wetsuits.The process they discovered works by simply placing the standard neoprene wetsuit inside a pressure tank autoclave no bigger than a beer keg, filled with a heavy inert gas, for about a day. </p>
+				    <button id="a5b">Read Article</button>
+				  </div>
+				</div>
+			</div>
+			<div class="container">
+				<br><br>
+			</div>
+								<div class="wow bounceInUp" class="card">
+									<div class="card-body" style="background-color:#e5e5e5;border-radius:50px;">
+										<div class="row">
+											<div class="col-3">
+										<img src="./images/articles/article6.jpg" height="100">
+									</div>
+					    <h4 class="card-title">How scrap tyres could stop buildings collapsing </h4>
+					    <p class="card-text">Earthquakes are one of the deadliest natural disasters, accounting for just 7.5% of such events between 1994 and 2013 but causing 37% of deaths.It isn’t the countries that suffer the most earthquakes that see the biggest losses. Instead, the number of people who die in an earthquake is related to how developed the country is.</p>
+					    <button id="a6b">Read Article</button>
+					  </div>
+					</div>
+				</div>
+				<div class="container">
+					<br><br>
+				</div>
+								<!--	<div class="card">
+										<div class="card-body">
+											<div class="row">
+												<div class="col-3">
+											<img src="./images/article7.jpg" height="100">
+										</div>
+						    <h4 class="card-title"><dl><dt style="font-size:24px;>Automating Home with Open Source Technology</dt></h4>
+						    <p class="card-text">Easier consumer access to high-performance computing and wireless technologies means the home automation sector could finally be about to take off. Open source hardware could be critical in this being accomplished - helping engineers to deliver solutions quickly and cost-effectively.</p>
+						    <button id="a7b">Read Article</button>
+						  </div>
+						</div>
+					</div>-->
+					<div class="container">
+						<br>
+							<div>
+							<a href="#heading" id="upb1"><i class="fa fa-angle-double-up" style="font-size:38px;color:#f15654;position:absolute;right:2px;bottom: 3px;background-color:#e5e5e5;border-radius:50%;width:40px;text-align:center;"></i></a>
+						</div>
+						</div>
+							</div>
+						</div>
+						<div class="col-xl-4">
+							<div class="flex-container"style="position:fixed;height:400px;right:5">
+								<img src="./images/giff.gif" style="height:400px;width:340px;"class="img-fluid">
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+								<div class="footer"style="background-color:#caccc6;">
+									<div class="text-center text-black">
+										<h5><span style="color:#595959">Designed, Developed & Maintained by Team</span> <span style="color:#f15654;font-weight:bold;">MVGR GLUG</span></h5>
+									</div>
+								</div>
+	<script>
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<script type="text/javascript">
+new WOW().init();
+</script>
+</body>
+</html>

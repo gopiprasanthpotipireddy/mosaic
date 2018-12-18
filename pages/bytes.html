@@ -1,0 +1,497 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+				 rel = "stylesheet">
+			<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+			<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Pacifico" rel="stylesheet">
+<title>BYTES | MOSAIC</title>
+<link rel="shortcut icon" type="image/png" href="./images/favicon.png">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<style>
+	@font-face { font-family: 'Messenger Pigeon'; src: url('./fonts/sample.ttf') format('truetype'); }
+		 #ab,#bb,#fb,#arb,#eb{
+		 	background-color:#f15654;
+		 	text-decoration: none;
+		 	border:none;
+		 	color:white;
+		 	font-size: 14px;
+		 }
+     #ab{
+       position:relative;
+       right:-220px;
+			 vertical-align: middle;
+			 line-height: 45px;
+			 height: 60px;
+     }
+     #arb{
+      position: relative;
+      right: -260px;
+			vertical-align: middle;
+			line-height: 45px;
+			height: 60px;
+
+    }
+    #eb{
+      position: relative;
+      right: -380px;
+			vertical-align: middle;
+	 	 line-height: 45px;
+	 	 height: 60px;
+    }
+    #bb{
+      position: relative;
+      right: -340px;
+			vertical-align: middle;
+		  line-height: 45px;
+		  height: 60px;
+    }
+
+    #fb{
+      position: relative;
+      right: -420px;
+			vertical-align: middle;
+ 		 line-height: 45px;
+ 		 height: 60px;
+    }
+    #sb{
+      position: relative;
+      right: -460px;
+      top:0px;
+      color:#f15654;
+      border:0;
+    }
+     #tb{
+        position: relative;
+        right: -300px;
+      background-color:white;
+       border:none;
+			 vertical-align: middle;
+			line-height: 45px;
+			height: 60px;
+       color:#f15654;
+       font-size:14px;
+		 }
+       #mb{
+       font-family: 'Messenger Pigeon', cursive;
+       font-size:36px;
+			 position: relative;
+			 top:-4px;
+			 color:white;
+			 height:60px;
+			 vertical-align:middle;
+			 line-height: 60px;
+       }
+       #bb:hover,#ab:hover,#eb:hover,#fb:hover,#arb:hover{
+     	 background-color:white;
+     	 border:none;
+     	 color:#f15654;
+     	 font-size: 14px
+     	}
+			@media only screen and (max-width:819px) {
+			.navbar-collapse{
+			  background-color:#ffffff;
+				transition:left 0.3s ease-in;
+				transition:left 0.3s ease-out;
+				position: absolute;
+				top:0;
+				left:-6px;
+				height: auto;
+			}
+			#ab,#bb,#eb,#tb,#fb,#arb{
+			 background-color:#ffffff;
+			 text-decoration: none;
+			 border:none;
+			 color:#f15654;
+			 font-size: 14px;
+			 padding-left:15px;
+			}
+			#ab:hover,#bb:hover,#eb:hover,#tb:hover,#fb:hover,#arb:hover{
+				color:#ed3b38;
+				font-weight: bold;
+			}
+			.navbar-collapse.collapsing {
+						 height: auto;
+						 -webkit-transition: left 0.3s ease;
+						 -o-transition: left 0.3s ease;
+						 -moz-transition: left 0.3s ease;
+						 transition: left 0.3s ease;
+						 left:-100%;
+						  z-index: 10;
+				 }
+				 .navbar-collapse.show {
+						 left:-6px;
+						 -webkit-transition: left 0.3s ease-in;
+						 -o-transition: left 0.3s ease-in;
+						 -moz-transition: left 0.3s ease-in;
+						 transition: left 0.3s ease-in;
+						  z-index: 10;
+				 }
+
+			}
+@media only screen and (max-width:820px)
+{
+	#drag{
+		display:none;
+	}
+simpledrag();
+}
+@media only screen and (max-width: 820px) {
+    /* For mobile phones: */
+#ab,#bb,#arb,#eb,#tb,#fb,#sb{
+	position:relative;
+	right:10px;
+}
+    }
+		@media only screen and (min-width: 821px) and (max-width:1100px) {
+		    /* For mobile phones: */
+		#ab{
+			position:relative;
+			right:-20px;
+		}
+		#arb{
+			position: relative;
+			right:-30px
+		}
+		#tb{
+			position: relative;
+			right:-40px
+		}
+		#bb{
+			position: relative;
+			right:-50px
+		}
+		#eb{
+			position: relative;
+			right:-60px
+		}
+		#fb{
+			position: relative;
+			right:-70px
+		}
+	#sb{
+		position: relative;
+		right:-80px
+	}
+		    }
+#fix{
+	position: fixed;
+	right:-5px;
+	top:180px;
+}
+#nofix{
+	height: 400px;
+	overflow-y: scroll;
+}
+#im{
+	max-width: 100%;
+	height:auto;
+}
+#card1:hover,#card2:hover,#card3:hover,#card4:hover,#card5:hover,#card6:hover,#card7:hover,#card8:hover{
+	border-color:#f15654;
+	border-width: thick;
+}
+.card-body{
+	background-color:#f15654;
+}
+.flex-container{
+	display:flex;
+	flex-direction: column;
+}
+#robo{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+  justify-content: center;
+}
+#collapsibleNavbar{
+	position: relative;
+	top:0px;
+}
+#bymodal {
+    display:none;
+		width:100%;
+		height:100%;
+		position:fixed;
+    overflow:hidden;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+.CS{
+	position: absolute;
+	top:0px;
+	left:0;
+	right:0;
+	bottom:0;
+	width: 400px;
+	height:450px;
+}
+.modal-body{
+	position: absolute;
+	top:0px;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.modal-content{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width: 400px;
+	height: 450px;
+}
+.modal-dialog-centered{
+	position: absolute;
+	top:25px;
+	left:400px;
+	width: 300px;
+	height: 300px;
+}
+.footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+</style>
+<body style="background-image:url('./images/arts/bg2.jpeg');background-repeat:no-repeat;	background-size: cover;	background-position: center;">
+	<nav class="navbar sticky-top navbar-expand-md navbar-dark " style="background-color:#f15654;height:60px;">
+		<a id="mb" class="nav-item nav-link active" href="./index.html">
+		Mosaic
+	</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+     <span class="navbar-toggler-icon"style="position:relative;top:-15px;"></span>
+   </button>
+	 <div class="collapse navbar-collapse" id="collapsibleNavbar">
+		 <div class="navbar-nav mr-auto">
+				 <a id="ab" class="nav-item nav-link active" href="./articles.html">
+				 ARTICLES
+			 </a>
+				 <a id="arb" class="nav-item nav-link active" href="./arts.html">
+				 ART CORNER
+			 </a>
+				 <a id="tb" class="nav-item nav-link active" href="./bytes.html">
+				 BYTES
+			 </a>
+				 <a id="bb" class="nav-item nav-link active" href="./blogs.html">
+				BLOGS
+			 </a>
+				 <a id="eb" class="nav-item nav-link active" href="./events.html">
+				 EVENTS
+			 </a>
+				 <a id="fb" class="nav-item nav-link active" href="./mvgrforums">
+				 FORUM
+			 </a>
+			 <form id="sb" class="form-inline" action="#">
+				 <input type="text" placeholder="&#xf002;Search" style="text-align:center;font-family:FontAwesome;width:180px;color:#f15654;"></input>
+			 </form>
+		 </div>
+	 </div>
+ </nav>
+	<br>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2">
+	<div class="flex-container">
+					<span data-toggle="modal" data-target="#bymodal"><a href="#bymodal" onclick="test(0)" ><div id="card1" class="card mb-4">
+					<img id="img1" class="card-img-top" src="./images/bytes/by1.jpg" alt="Card image cap" >
+					<div id="cb1" class="card-body">
+					</div>
+				</div>
+			</a></span>
+				<span data-toggle="modal" data-target="#bymodal"><a href="#bymodal" onclick="test(1)" ><div id="card2" class="card mb-4">
+					<img id="img2" class="card-img-top" src="./images/bytes/by2.jpg" alt="Card image cap" >
+					<div id="cb2" class="card-body">
+					</div>
+				</div>
+			</a></span>
+			</div>
+		</div>
+					<div class="col-sm-3">
+		      <div class="flex-container">
+						<span data-toggle="modal" data-target="#bymodal"><a href="#bymodal" onclick="test(2)" ><div id="card7" class="card mb-4">
+							<img id="img7" class="card-img-top" src="./images/bytes/by7.jpg" alt="Card image cap" height="190px">
+							<div id="cb7" class="card-body">
+							</div>
+						</div>
+					</a></span>
+							<span data-toggle="modal" data-target="#bymodal"><a href="#bymodal" onclick="test(3)" ><div id="card3" class="card mb-4">
+								<img id="img3" class="card-img-top" src="./images/bytes/by3.jpg" alt="Card image cap"  height="220px">
+								<div id="cb3" class="card-body">
+								</div>
+							</div>
+						</a></span>
+						</div>
+					</div>
+					<div id="robo" class="col-sm-2">
+						<div id="drag" class="flex-container">
+						<img id="r" src="./images/robo.jpg" alt="TheRobo" class="img-fluid">
+					</div>
+					</div>
+					<div class="col-sm-3">
+		      <div class="flex-container">
+							<span data-toggle="modal" data-target="#bymodal"><a href="#bymodal" onclick="test(4)" ><div id="card5" class="card mb-4">
+								<img id="img5" class="card-img-top" src="./images/bytes/by5.jpg" alt="Card image cap" height="220" >
+								<div id="cb5" class="card-body">
+								</div>
+							</div>
+						</a></span>
+							<span data-toggle="modal" data-target="#bymodal"><a href="#bymodal" onclick="test(5)" ><div id="card6" class="card mb-4">
+								<img id="img6" class="card-img-top" src="./images/bytes/by6.jpg" alt="Card image cap" >
+								<div id="cb6" class="card-body">
+								</div>
+							</div>
+						</a></span>
+						</div>
+					</div>
+					<div class="col-sm-2">
+		      <div class="flex-container">
+							<span data-toggle="modal" data-target="#bymodal"><a href="#bymodal" onclick="test(6)" ><div id="card8" class="card mb-4">
+								<img id="img8" class="card-img-top" src="./images/bytes/by8.jpg" alt="Card image cap" >
+								<div id="cb8" class="card-body">
+								</div>
+							</div>
+						</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal" id="bymodal" tabindex="-1" role="dialog" aria-labelledby="BymodalLabel" aria-hidden="true">
+				<div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:white;font-size:36px;">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xl-2">
+								<br><br><br><br><br><br><br><br><br><br><br>
+					<div>
+				 <i id="indl" class="fas fa-chevron-circle-left" style="font-size:36px;color:white;" onclick="minus()"></i>
+				 </div>
+			 </div>
+			 <div class="col-xl-8">
+				<div class="modal-dialog modal-dialog-centered" role="document"style="position:absolute;left:230px;">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div>
+						<img class="CS" id="img1" src="./images/bytes/by1.jpg" alt="soos" />
+						<div>
+							<img class="CS" id="img2" src="./images/bytes/by2.jpg" alt="soos" />
+							<div>
+								<img class="CS" id="img3" src="./images/bytes/by7.jpg" alt="soos" />
+							<div>
+								<img class="CS" id="img4" src="./images/bytes/by3.jpg" alt="soos" />
+							<div>
+								<img class="CS" id="img5" src="./images/bytes/by5.jpg" alt="soos" />
+							<div>
+								<img class="CS" id="img6" src="./images/bytes/by6.jpg" alt="soos" />
+							<div>
+								<img class="CS" id="img7" src="./images/bytes/by8.jpg" alt="soos" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+			<div class="col-xl-2">
+						<br><br><br><br><br><br><br><br><br><br><br>
+				<i class="fas fa-chevron-circle-right" style="font-size:36px;color:white;position:absolute;right:0px;" onclick="plus()"></i>
+			</div>
+		</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-2">
+				</div>
+			<div class="col-8">
+				<div class="container">
+					<br><br><br><br><br><br><br><br>
+				<div id="carouselContent" class="carousel slide" data-ride="carousel" data-interval="false">
+					<div class="carousel-inner" role="listbox">
+							<div class="carousel-item active text-center p-4">
+							<img class="CC"  src="./images/bytes/by1.jpg" onclick="test(0)" style="height:100px;width:150px;">
+							<img class="CC"  src="./images/bytes/by2.jpg" width="150px" height="100" onclick="test(1)">
+							<img class="CC"  src="./images/bytes/by7.jpg" width="150px" height="100" onclick="test(2)">
+							<img class="CC"  src="./images/bytes/by3.jpg" width="150px" height="100" onclick="test(3)">
+							</div>
+							<div class="carousel-item text-center p-4">
+								<img class="CC" src="./images/bytes/by5.jpg" width="150px" height="100" onclick="test(4)">
+								<img class="CC" src="./images/bytes/by6.jpg" width="150px" height="100" onclick="test(5)">
+								<img class="CC" src="./images/bytes/by8.jpg" width="150px" height="100" onclick="test(6)">
+							</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+							<span  class="carousel-control-prev-icon" aria-hidden="true" style="caret-color:#000000"></span>
+							<span style="color:#f15654" class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"style="caret-color:#000000"></span>
+							<span class="sr-only">Next</span>
+					</a>
+				</div>
+				</div>
+			</div>
+			<div class="col-2">
+			</div>
+		</div>
+		</div>
+		</div>
+		<div class="footer"style="background-color:#caccc6">
+			<div class="text-center text-black">
+				<h5><span style="color:#595959">Designed, Developed & Maintained by Team</span> <span style="color:#f15654;font-weight:bold;">MVGR GLUG</span></h4>
+			</div>
+		</div>
+			<script type="text/javascript">
+				var temp;
+				var temp2;
+				function test(n){
+					 var mod=document.getElementById('bymodal')
+			mod.style.display = "block";
+			var slides=document.getElementsByClassName('CS')
+			var sup=document.getElementsByClassName('CC')
+			for(var i=0;i<slides.length;i++){
+				if(i==n){
+				slides[i].style.display="block";
+				sup[i].style.border="5px solid #f15654";
+					continue;}
+						sup[i].style.border="none";
+			slides[i].style.display="none";
+			}
+			temp=n;
+			temp2=slides.length;
+			}
+			function minus(){
+			 if(temp>0){
+					test(temp-=1);
+					}
+				}
+			function plus(){
+				if(temp<temp2-1){
+					test(temp+=1)
+				}
+			}
+
+
+		</script>
+</body>
+</html>

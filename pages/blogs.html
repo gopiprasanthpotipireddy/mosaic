@@ -1,0 +1,533 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="./js/wow.min.js"></script>
+	<link rel="stylesheet" href="./css/animate.css">
+		<link rel="stylesheet" href="./css/animate.min.css">
+	<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="./fonts/sample.ttf">
+	<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Pacifico" rel="stylesheet">
+<title>BLOGS | MOSAIC</title>
+<link rel="shortcut icon" type="image/png" href="./images/favicon.png">
+<style>
+@font-face { font-family: 'Messenger Pigeon'; src: url('./fonts/sample.ttf') format('truetype'); }
+.btn:hover{
+		 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);}
+#s{
+	position:relative;
+	left:30px;
+}
+#ab,#eb,#tb,#fb,#arb{
+	background-color:#f15654;
+	text-decoration: none;
+	border:none;
+	color:white;
+	font-size: 14px;
+ }
+ #ab{
+	 position: relative;
+	 right: -220px;
+	 height: 60px;
+	 vertical-align: middle;
+	 line-height: 45px;
+ }
+ #arb{
+	position: relative;
+	right: -260px;
+	height: 60px;
+	vertical-align: middle;
+	line-height: 45px;
+}
+#tb{
+	position: relative;
+	right: -300px;
+	height: 60px;
+	vertical-align: middle;
+	line-height: 45px;
+}
+#bb{
+	background-color:#ffffff;
+	text-decoration: none;
+	border:none;
+	color:#f15654;
+	font-size: 14px;
+	position: relative;
+	right: -340px;
+	height: 60px;
+	vertical-align: middle;
+	line-height: 45px;
+}
+#eb{
+	position: relative;
+	right: -380px;
+	height: 60px;
+	vertical-align: middle;
+	line-height: 45px;
+}
+#fb{
+	position: relative;
+	right: -420px;
+	height: 60px;
+	vertical-align: middle;
+	line-height: 45px;
+}
+#sb{
+	position: relative;
+	right: -460px;
+	top:0px;
+	color:#f15654;
+	border:0;
+
+}
+#mb{
+	font-family: 'Messenger Pigeon', cursive;
+	font-size:36px;
+	position: relative;
+	top:-4px;
+ color:white;
+ height:60px;
+ vertical-align:middle;
+	line-height: 60px;
+}
+@media only screen and (max-width:819px) {
+.navbar-collapse{
+  background-color:#ffffff;
+	transition:left 0.3s ease-in;
+	transition:left 0.3s ease-out;
+	position: absolute;
+	top:0;
+	left:-6px;
+	height: auto;
+}
+#ab,#bb,#eb,#tb,#fb,#arb{
+ background-color:#ffffff;
+ text-decoration: none;
+ border:none;
+ color:#f15654;
+ font-size: 14px;
+ padding-left:15px;
+}
+#ab:hover,#bb:hover,#eb:hover,#tb:hover,#fb:hover,#arb:hover{
+	color:#ed3b38;
+	font-weight: bold;
+}
+.navbar-collapse.collapsing {
+			 height: auto;
+			 -webkit-transition: left 0.3s ease;
+			 -o-transition: left 0.3s ease;
+			 -moz-transition: left 0.3s ease;
+			 transition: left 0.3s ease;
+			 left:-100%;
+			  z-index: 10;
+	 }
+	 .navbar-collapse.show {
+			 left:-6px;
+			 -webkit-transition: left 0.3s ease-in;
+			 -o-transition: left 0.3s ease-in;
+			 -moz-transition: left 0.3s ease-in;
+			 transition: left 0.3s ease-in;
+			  z-index: 10;
+	 }
+
+}
+@media only screen and (max-width: 820px) {
+    /* For mobile phones: */
+#ab,#bb,#arb,#eb,#tb,#fb,#sb{
+	position:relative;
+	right:10px;
+}
+    }
+		@media only screen and (min-width: 821px) and (max-width:1100px) {
+		    /* For mobile phones: */
+		#ab{
+			position:relative;
+			right:-20px;
+		}
+		#arb{
+			position: relative;
+			right:-30px
+		}
+		#tb{
+			position: relative;
+			right:-40px
+		}
+		#bb{
+			position: relative;
+			right:-50px
+		}
+		#eb{
+			position: relative;
+			right:-60px
+		}
+		#fb{
+			position: relative;
+			right:-70px
+		}
+	#sb{
+		position: relative;
+		right:-80px
+	}
+		    }
+ #a1b,#a2b,#a3b,#a4b,#a5b,#a6b,#a7b{
+	 background-color:#f15654;
+	text-decoration: none;
+	border:none;
+	color:white;
+	font-size: 17px;
+	font: 400 20px 'Lobster Two',cursive;
+	letter-spacing: 1.5px;
+ }
+ #ab:hover,#eb:hover,#tb:hover,#fb:hover,#arb:hover{
+	background-color:white;
+	border:none;
+	color:#f15654;
+	font-size: 14px
+ }
+ #a1b:hover,#a2b:hover,#a3b:hover,#a4b:hover,#a5b:hover,#a6b:hover,#a7b:hover{
+	background-color:white;
+	border:none;
+	color:#f15654;
+	font-size: 20px
+ }
+
+	#cs,#ec{position:relative;
+	left:-190px;}
+#ee,#me{position:relative;
+	left:-185px;}
+#r{position:relative;
+	left:-90px;}
+#q{color:white;position:relative;top:15px;}
+.glyphicon.glyphicon-comment{font-size:20px;}
+.modal-backdrop{
+	bottom:0;}
+	.image_up {
+	    -webkit-transform: rotate(270deg);
+	    -moz-transform: rotate(270deg);
+	    -ms-transform: rotate(270deg);
+	    -o-transform: rotate(270deg);
+	    transform: rotate(270deg);
+		margin-left:30px;
+	}
+  #bi {
+    height: 100%;
+    background-image: url('ab2.jpeg');
+		background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.card-body{
+	background-color: #ffffff;
+}
+.card{
+	border:0;
+}
+.card-text{
+	color:#f15654;
+}
+.modal-body {
+    max-height: calc(100vh - 143px);
+    overflow-y: auto; }
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+	.card-img-top{
+		border-width:11px;
+		border-color:#f15654;
+	}
+	#card2{
+		border-radius: 50%;
+	}
+	#img1,#img2,#img3,#img4,#img5,#img6,#img7{
+	 background: #f15654 !important;
+		position: absolute;
+		top: 0;
+		left:0;
+		right:0;
+		bottom:0;
+		border-radius:50%;
+		width:250px;
+		height:250px;
+		-webkit-animation-duration: 1s;
+	-vendor-animation-iteration-count: infinite;
+	}
+	#c1,#c2,#c3,#c4,#c5,#c6,#c7{
+		position: relative;
+width: 250px;
+height: 250px;
+background-color: #f15654;
+border-radius: 50%;
+
+	}
+	.overlay {
+		position: absolute;
+		left:0;
+		bottom:0;
+		right:0;
+		top:0;
+	  background-color:#f15654;
+		opacity: 0;
+	  width: 250px;
+	  height:250px;
+	  transition: .5s ease;
+		border-radius: 50%;
+
+
+	}
+	#c1:hover .overlay,#c2:hover .overlay,#c3:hover .overlay,#c4:hover .overlay,#c5:hover .overlay,#c6:hover .overlay,#c7:hover .overlay {
+	  opacity:0.75;
+	}
+
+	.text1 {
+	  color: white;
+	  font-size: 20px;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	}
+	.flex-container{
+		display: flex;
+		flex-direction: column;
+	}
+	#collapsibleNavbar{
+		position: relative;
+		top:0px;
+	}
+	.footer{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+	}
+</style>
+</head>
+<body style="background-image:url('./images/arts/bg2.jpeg');background-repeat:no-repeat;	background-size: cover;background-position:right;">
+	<script type="text/javascript">
+$(document).ready(function(){
+	$("#c1").hover(function(){
+	$("#img1").toggleClass('animated bounceIn')
+	});
+});
+$(document).ready(function(){
+	$("#c2").hover(function(){
+	$("#img2").toggleClass('animated bounceIn')&& $("#cb2").show().addClass('animated slideInDown')
+	});
+});
+$(document).ready(function(){
+	$("#c3").hover(function(){
+	$("#img3").toggleClass('animated bounceIn')&& $("#cb3").show().addClass('animated slideInDown')
+	});
+});
+$(document).ready(function(){
+	$("#c4").hover(function(){
+	$("#img4").toggleClass('animated bounceIn')&& $("#cb4").show().addClass('animated slideInDown')
+	});
+});
+$(document).ready(function(){
+	$("#c5").hover(function(){
+	$("#img5").toggleClass('animated bounceIn')&& $("#cb5").show().addClass('animated slideInDown')
+	});
+});
+$(document).ready(function(){
+	$("#c6").hover(function(){
+	$("#img6").toggleClass('animated bounceIn')&& $("#cb6").show().addClass('animated slideInDown')
+	});
+});
+$(document).ready(function(){
+	$("#c7").hover(function(){
+	$("#img7").toggleClass('animated bounceIn')&& $("#cb6").show().addClass('animated slideInDown')
+	});
+});
+</script>
+<nav class="navbar sticky-top navbar-expand-md navbar-dark " style="background-color:#f15654;height:60px;">
+	<a id="mb" class="nav-item nav-link active" href="./index.html">
+	Mosaic
+</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon" style="position:relative;top:-15px;"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<div class="navbar-nav mr-auto">
+				<a id="ab" class="nav-item nav-link active" href="./articles.html">
+				ARTICLES
+			</a>
+				<a id="arb" class="nav-item nav-link active" href="./arts.html">
+				ART CORNER
+			</a>
+				<a id="tb" class="nav-item nav-link active" href="./bytes.html">
+				BYTES
+			</a>
+				<a id="bb" class="nav-item nav-link active" href="./blogs.html">
+			 BLOGS
+			</a>
+				<a id="eb" class="nav-item nav-link active" href="./events.html">
+				EVENTS
+			</a>
+				<a id="fb" class="nav-item nav-link active" href="./mvgrforums">
+				FORUM
+			</a>
+			<form id="sb" class="form-inline" action="#">
+				<input type="text" placeholder="&#xf002;Search" style="text-align:center;font-family:FontAwesome;width:180px;color:#f15654;"></input>
+			</form>
+		</div>
+	</div>
+</nav>
+<br>
+ <br>
+ <div class="container-fluid">
+ 	<div class="row">
+ 		<div class="col-2">
+ 		</div>
+ 	<div class="col-8"style="background-color:#f15654">
+ 		<div class="container">
+ 		<div id="carouselContent" class="carousel slide" data-ride="carousel">
+ 			<div class="carousel-inner" role="listbox">
+ 					<div class="carousel-item active text-center p-4">
+ 							 <h5 style="color:#ffffff;"><i class="fa fa-quote-left"> To Blog = To Share...Create...Connect...Inspire </i> <i class="fa fa-quote-right"></i></h5>
+ 					</div>
+ 					<div class="carousel-item text-center p-4">
+
+ 							<h5 style="color:#ffffff;"><i class="fa fa-quote-left"> Go into yourself!  </i> <i class="fa fa-quote-right"></i></h5>
+ 					</div>
+ 			</div>
+ 			<a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+ 					<span  class="carousel-control-prev-icon" aria-hidden="true" style="caret-color:#000000"></span>
+ 					<span style="color:#f15654" class="sr-only">Previous</span>
+ 			</a>
+ 			<a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+ 					<span class="carousel-control-next-icon" aria-hidden="true"style="caret-color:#000000"></span>
+ 					<span class="sr-only">Next</span>
+ 			</a>
+ 		</div>
+ 		</div>
+ 	</div>
+ 	<div class="col-2">
+ 	</div>
+ </div>
+ </div>
+<br><br><br>
+<div class="container-fluid">
+  <div class="row">
+		<div class="col-xl-3 col-lg-3 col-md-4">
+			<div class="flex-container"style="position:fixed;height:400px;right:5">
+				<img src="./images/giff.gif" style="height:350px;width:300px;"class="img-fluid">
+			</div>
+  </div>
+    <div class="col-xl-3 col-lg-3 col-md-4 ">
+			<div class="flex-container">
+       <div id="c1"  class="wow slideInLeft" class="container">
+				<img id="img1" src="./images/blogs/1.jpg" alt="blog1" class="img-thumbnail">
+				<div class="overlay">
+					<div class="text1">
+						<h4 style="color:#ffffff;font-weight:bold;">THOUGHTS & TRUTHS</h4>
+		           <p>Sasanka MSD<br> <i style="align-content:center;" class="fa fa-university"> CSE</i><br>(2015-2019)<br><a style="color:#000000;" href="http://www.thoughtsntruths777.wordpress.com" target="_blank">click here to visit blog!</a></p>
+					</div>
+					</div>
+				</div>
+			<div>
+				<br>
+			</div>
+					<div id="c2"  class="wow slideInUp" class="container">
+      <img id="img2" src="./images/blogs/2.jpg" alt="blog2" class="img-thumbnail">
+			<div class="overlay">
+				<div class="text1">
+					<h4 style="color:#ffffff;font-weight:bold;font-size:22px;">PART TIME WRITER</h4>
+					<p>K.S.S.K.Suraj<br> <i style="align-content:center;" class="fa fa-university"> CSE</i><br>(2016-2020)<br><a style="color:#000000;" href="http://www.readastorynow.wordpress.com" target="_blank">click here to visit blog!</a></p>
+				</div>
+				</div>
+			</div>
+			<div>
+				<br>
+			</div>
+			<div id="c7"  class="wow slideInLeft" class="container">
+		<img id="img7"src="./images/blogs/6.jpg"alt="artndcraft" class="img-thumbnail">
+		<div class="overlay">
+			<div class="text1">
+				<h4 style="color:#ffffff;font-weight:bold;font-size:22px;">CRAFT FAIR</h4>
+					 <p>Mrudula<br> <i style="align-content:center;" class="fa fa-university"> CSE</i><br>(2015-2019)<br><a style="color:#000000;" href="https://artsncrafts99.wordpress.com/" target="_blank">click here to visit blog!</a></p>
+			</div>
+			</div>
+	 </div>
+		</div>
+	</div>
+    <div class="col-xl-3 col-lg-3 col-md-4">
+			<div class="flex-container">
+					<div id="c3"  class="wow bounceInUp" class="container">
+    <img id="img3"src="./images/blogs/3.jpg"alt="blog3" class="img-thumbnail">
+		<div class="overlay">
+			<div class="text1">
+				<h4 style="color:#ffffff;font-weight:bold;font-size:22px;">CANVAS OF COLOURS</h4>
+					<p>K.Sahithi<br> <i style="align-content:center;" class="fa fa-university"> CSE</i><br>(2015-2019)<br><a style="color:#000000;" href="http://www.canvasofcolors.wordpress.com" target="_blank">click here to visit blog!</a></p>
+			</div>
+			</div>
+		</div>
+		<div>
+			<br>
+		</div>
+
+				<div id="c4"  class="wow bounceInDown"class="container">
+			<img id="img4"src="./images/blogs/4.jpg"alt="blog4" class="img-thumbnail">
+			<div class="overlay">
+				<div class="text1">
+					<h4 style="color:#ffffff;font-weight:bold;font-size:22px;">WEB DEVELOPMENT</h4>
+						<p>M.Sethu Pavan<br> <i style="align-content:center;" class="fa fa-university"> CSE</i><br>(2015-2019)<br><a style="color:#000000;" href="https://justforfullstack.blogspot.com" target="_blank">click here to visit blog!</a></p>
+				</div>
+				</div>
+				</div>
+		 </div>
+	 </div>
+
+
+			 <div class="col-xl-3 col-lg-3">
+				 <div class="flex-container">
+        <div id="c5" class="wow slideInRight" class="container">
+ 			<img id="img5"src="./images/blogs/5.png"alt="blog5" class="img-thumbnail">
+			<div class="overlay">
+				<div class="text1">
+					<h3 style="color:#ffffff;font-weight:bold;font-size:22px;">Nicky Nick's blog</h3>
+						<p>Nikhilesh<br> <i style="align-content:center;" class="fa fa-university"> CSE</i><br>(2015-2019)<br><a style="color:#000000;" href="http://nickynick143.wordpress.com/" target="_blank">click here to visit blog!</a></p>
+				</div>
+				</div>
+				</div>
+		 <div>
+			 <br>
+		 </div>
+		 <div id="c6"  class="wow slideInUp" class="container">
+	 <img id="img6"src="./images/blogs/7.jpg"alt="techforever" class="img-thumbnail">
+	 <div class="overlay">
+		 <div class="text1">
+			 <h4 style="color:#ffffff;font-weight:bold;font-size:22px;">TECHFOREVER</h4>
+					<p>Mrudula<br> <i style="align-content:center;" class="fa fa-university"> CSE</i><br>(2015-2019)<br><a style="color:#000000;" href="https://techforever99.wordpress.com/" target="_blank">click here to visit blog!</a></p>
+		 </div>
+		 </div>
+	</div>
+  </div>
+</div>
+</div>
+</div>
+<div class="footer"style="background-color:#caccc6">
+	<div class="text-center text-black">
+		<h5><span style="color:#595959">Designed, Developed & Maintained by Team <span style="color:#f15654;font-weight:bold;">MVGR GLUG</span></h5>
+	</div>
+</div>
+<script type="text/javascript">
+new WOW().init();
+</script>
+</body>
+</html>
