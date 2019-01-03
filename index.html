@@ -19,8 +19,11 @@
 	<script src="./js/wow.min.js"></script>
 	<script src="./fullpage/jquery.fullpage.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.css"/>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.js"></script>
+	<link rel="stylesheet" href="./introjs/introjs.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/introjs-rtl.min.css">
+	
 	<title>HOME | MOSAIC</title>
+	
 	<style>
 	@media only screen and (max-width: 480px)  {
 
@@ -133,7 +136,7 @@ transform: translateX(-50px);
 	background: #f15654;
 	animation: animat 4s linear infinite;
 }
-@@keyframes animat {
+@keyframes animat {
 	0%{
 		background: #f15654;
 	}
@@ -145,6 +148,7 @@ transform: translateX(-50px);
 </head>
 
 <body  style="background-image:url('./images/arts/bg2.jpeg');background-repeat:no-repeat;	background-size: cover;	background-position: center;">
+	
 	<nav class="navbar sticky-top navbar-expand-md navbar-dark " style="background-color:#f15654;height:60px;">
 		<a id="mb" class="nav-item nav-link active" href="./index.html">
 		Mosaic
@@ -154,7 +158,7 @@ transform: translateX(-50px);
   	</button>
 		<div class="collapse navbar-collapse" id="collapsibleNavbar">
 			<div class="navbar-nav mr-auto">
-					<a id="ab" class="nav-item nav-link active" href="./pages/articles.html">
+					<a id="ab" class="nav-item nav-link active" href="./pages/articles.html" data-step="1" data-intro="View Artcles" >
 					ARTICLES
 				</a>
 					<a id="arb" class="nav-item nav-link active" href="./pages/arts.html">
@@ -233,7 +237,7 @@ transform: translateX(-50px);
 	<div class="list-group"style="border:2px solid #a9a9a9;">
 		<div class="list-group-item flex-column align-items-center"style="background-color:#f6f6f6">
 			<div class="d-flex w-100 p-1 justify-content-center">
-				<h5 style=""class="mb-1"><span style="color:#f15654;font-size:24px;font-weight:bold;text-decoration:underline;">TRENDING</span><span style="color:#f15654;font-size:24px;text-decoration:underline;">@MVGRCE(A)</h5>
+				<h5 class="mb-1"><span style="color:#f15654;font-size:24px;font-weight:bold;text-decoration:underline;">TRENDING</span><span style="color:#f15654;font-size:24px;text-decoration:underline;">@MVGRCE(A)</h5>
 			</div>
 		</div>
   <div id="tra" href="#" class="list-group-item flex-column align-items-start"style="background-color:#eeeeee">
@@ -314,6 +318,7 @@ transform: translateX(-50px);
 </table>
 </div>
 </div>-->
+
 <div class="section">
 	<div class="slide">
 		<div class="containerhod">
@@ -348,6 +353,7 @@ transform: translateX(-50px);
 </table>-->
 
 </div>
+
 		<div class="footer"style="background-color:#caccc6;">
 					<div style="text-align:center;">
 						<h5><span style="color:#595959;">Designed, Developed & Maintained by Team</span> <span style="color:#f15654;font-weight:bold;">MVGR GLUG</span></h5>
@@ -355,13 +361,57 @@ transform: translateX(-50px);
 					</div>
 					
 				</div>
-				<script type="text/javascript">
+			<script type="text/javascript">
 				$(document).ready(function(){
 					$('#fullpage').fullpage();
 				})
 				</script>
 		<script type="text/javascript">
 		new WOW().init();
+		</script>
+	
+    <script type="text/javascript" src="./introjs/intro.js"></script>
+	<script>
+		var intro=introJs()
+		intro.setOptions({
+            steps: [
+              { 
+                intro: "Hello world!"
+              },
+              {
+                element: document.querySelector('#ab'),
+                intro: "View Articles"
+              },
+              {
+                element: document.querySelectorAll('#arb')[0],
+                intro: "View Arts",
+                position: 'right'
+              },
+              {
+                element: '#tb',
+                intro: 'Content',
+                position: 'left'
+              },
+              {
+                element: '#bb',
+                intro: "Content.",
+                position: 'bottom'
+              },
+              {
+                element: '#eb',
+                intro: 'Content'
+              },
+			  {
+                element: '#fb',
+                intro: 'Content.'
+              },
+			  {
+                element: '#sb',
+                intro: 'Content'
+              }
+            ]
+          });
+		intro.start()
 		</script>
 </body>
 </html>
