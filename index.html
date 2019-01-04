@@ -233,7 +233,7 @@ transform: translateX(-50px);
 			</div>
 		</div>
 </div>
-<div class="col-sm-5" style="height:490px;overflow-y:scroll;">
+<div class="col-sm-5" id="trending" style="height:490px;overflow-y:scroll;">
 	<div class="list-group"style="border:2px solid #a9a9a9;">
 		<div class="list-group-item flex-column align-items-center"style="background-color:#f6f6f6">
 			<div class="d-flex w-100 p-1 justify-content-center">
@@ -371,45 +371,6 @@ transform: translateX(-50px);
 		</script>
 	
     <script type="text/javascript" src="./introjs/intro.js"></script>
-	<script>
-		var intro=introJs()
-		intro.setOptions({
-            steps: [
-              
-              {
-                element: document.querySelector('#ab'),
-                intro: "View Articles"
-              },
-              {
-                element: document.querySelectorAll('#arb')[0],
-                intro: "View Arts",
-                position: 'right'
-              },
-              {
-                element: '#tb',
-                intro: 'Content',
-                position: 'left'
-              },
-              {
-                element: '#bb',
-                intro: "Content.",
-                position: 'bottom'
-              },
-              {
-                element: '#eb',
-                intro: 'Content'
-              },
-			  {
-                element: '#fb',
-                intro: 'Content.'
-              },
-			  {
-                element: '#sb',
-                intro: 'Content'
-              }
-            ]
-          });
-		intro.start()
-		</script>
+	<script type="text/javascript" src="./js/tour.js"></script>
 </body>
 </html>
