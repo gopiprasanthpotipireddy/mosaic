@@ -222,9 +222,26 @@ $(document).ready(function(){
 					<a id="fb" class="nav-item nav-link active" href="./mvgrforums">
 					FORUM
 				</a>
-				<form id="sb" class="form-inline" action="#">
-					<input type="text" placeholder="&#xf002;Search" style="text-align:center;font-family:FontAwesome;width:180px;color:#f15654;"></input>
+				<!-- added custom google search engine-->
+				<div id="sb">
+					<script>
+						(function() {
+						  var cx = '001842567882106403902:fewnn1xkd8w';
+						  var gcse = document.createElement('script');
+						  gcse.type = 'text/javascript';
+						  gcse.async = true;
+						  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+						  var s = document.getElementsByTagName('script')[0];
+						  s.parentNode.insertBefore(gcse, s);
+						})();
+					  </script>
+					  <gcse:search></gcse:search>
+					</div>
+				<!--	<form id="sb" class="form-inline" action="#">
+					<iframe src="https://duckduckgo.com/search.html?width=300&site=https://www.drupal.org/&prefill=Search WebSite&bgcolor=FFFFFF&focus=yes" style="overflow:hidden;margin:0;padding:0;width:358px;height:40px;" frameborder="0"></iframe>
+							
 				</form>
+			-->
 			</div>
 		</div>
 
